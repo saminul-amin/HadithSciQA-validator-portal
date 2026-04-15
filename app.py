@@ -214,7 +214,7 @@ def render_mcq_question(item):
             )
 
     # Explanation
-    with st.expander("📝 Explanation / الشرح", expanded=False):
+    if st.toggle("📝 Show Explanation / الشرح", value=False, key=f"expl_{item['id']}"):
         st.markdown(f'<div class="arabic-text">{item["explanation_ar"]}</div>', unsafe_allow_html=True)
 
 
