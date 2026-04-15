@@ -1,0 +1,16 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+
+# Validation results (local only)
+data/validation_results.json
+
+# Environment
+.env
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
